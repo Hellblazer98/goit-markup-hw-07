@@ -396,17 +396,17 @@ img {
 
 /* Клієнти */
 
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.clients-list .list-item {
+.clients__item {
     flex-basis: calc((100% - 150px) / 6);
 }
 
-.client-link {
+.client__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -416,16 +416,16 @@ img {
     transition: border-color var(--anim-hover);
 }
 
-.client-link .icon {
+.clients__icon {
     fill: var(--icon-color);
     transition: fill var(--anim-hover);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
     border-color: var(--attention-color) ;
 }
-.client-link:hover .icon {
+.client__link:hover .clients__icon {
     fill: var(--attention-color);
 }
 
@@ -436,41 +436,13 @@ img {
     padding-bottom: 60px;
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     align-items: baseline;
 }
 
 
-.logo-footer {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--background-color);
-}
-
-
-.address-list .location {
-    display: inline-block;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--background-color);
-    transition: color var(--anim-hover);
-}
-
-.address-list .location:hover,
-.address-list .location:focus {
-    color: var(--attention-color);
-}
-
-.address-list .contact {
+.addresses__link {
     display: inline-block;
     font-style: normal;
     font-weight: 400;
@@ -481,24 +453,30 @@ img {
     transition: color var(--anim-hover);
 }
 
-.adress-item {
-    margin-bottom: 9px;
+.addresses__link--white {
+    color: var(--background-color);
 }
 
-.adress-item:last-child {
-    margin-bottom: 0;
-}
-
-.address-list .contact:hover,
-.address-list .contact:focus {
+.addresses__link:hover,
+.addresses__link:focus {
     color: var(--attention-color);
 }
 
-.footer-social {
+.adresses__item {
+    margin-bottom: 9px;
+}
+
+.adresses__item:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.footer__socials {
     margin-left: 70px;
 }
 
-.footer-title {
+.footer__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.15;
