@@ -20,7 +20,7 @@
     <header class="header">
       <div class="container header__container">
         <a class="link logo" href="" lang="en"
-          ><span class="logo__dark">Web</span>Studio</a
+          >Web<span class="logo__dark">Studio</span></a
         >
         <nav class="nav">
           <ul class="list nav__list">
@@ -60,7 +60,7 @@
       <section class="section hero">
         <div class="container hero__container">
           <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn" type="button" data-modal-open>
+          <button class="btn btn-hero" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -496,13 +496,13 @@
                 </svg>
               </a>
             </li>
-            <li class="list-item">
+            <li class="clients__item">
               <a
-                class="link client-link"
+                class="link clients__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                ><svg class="icon" width="106" height="60">
+                ><svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-Logo-4"></use></svg
               ></a>
             </li>
@@ -527,7 +527,7 @@
       <div class="container footer__container">
         <div class="footer__contacts">
           <a class="link logo" href="" lang="en"
-            ><span class="logo__light">Web</span>Studio</a
+            >Web<span class="logo__light">Studio</span></a
           >
           <address>
             <ul class="list addresses">
@@ -555,55 +555,55 @@
         </div>
         <div class="footer__socials">
           <h3 class="footer__title">приєднуйтесь</h3>
-          <ul class="list footer-links">
-            <li class="list-item">
+          <ul class="list socials">
+            <li class="socials__item">
               <a
                 href=""
-                class="link footer-media"
+                class="link socials__link socials__link--grey"
                 target="_blank"
                 rel="noopener
                 noreferrer"
               >
-                <svg class="icon" width="20" height="20">
+                <svg class="socials__icon socials__icon--white" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
+            <li class="socials__item">
               <a
                 href=""
-                class="link footer-media"
+                class="link socials__link socials__link--grey"
                 target="_blank"
                 rel="noopener
                 noreferrer"
               >
-                <svg class="icon" width="20" height="20">
+                <svg class="socials__icon socials__icon--white" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
+            <li class="socials__item">
               <a
                 href=""
-                class="link footer-media"
+                class="link socials__link socials__link--grey"
                 target="_blank"
                 rel="noopener
                 noreferrer"
               >
-                <svg class="icon" width="20" height="20">
+                <svg class="socials__icon socials__icon--white" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-item">
+            <li class="socials__item">
               <a
                 href=""
-                class="link footer-media"
+                class="link socials__link socials__link--grey"
                 target="_blank"
                 rel="noopener
                 noreferrer"
               >
-                <svg class="icon" width="20" height="20">
+                <svg class="socials__icon socials__icon--white" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -613,25 +613,24 @@
         <div class="subscribe">
           <form
             name="subscribe-form"
-            class="form-subscribe"
             autocomplete="on"
             novalidate
           >
             <label>
-              <span class="footer-title submit-title"
+              <span class="footer-title subscribe__title"
                 >Підпишіться на розсилку</span
               >
             </label>
-            <div class="subscribe-wrap">
+            <div class="subscribe__wrap">
               <input
                 type="email"
                 name="email"
-                class="subscribe-input"
+                class="subscribe__input"
                 placeholder="E-mail"
               />
               <button type="submit" class="btn btn-subscribe">
                 Підписатися
-                <svg width="24" height="24" class="icon-subscribe">
+                <svg width="24" height="24" class="btn-subscribe__icon">
                   <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
@@ -642,50 +641,50 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
-          <svg width="11" height="11" class="icon">
+        <button class="btn-modal" type="button" data-modal-close>
+          <svg width="11" height="11" class="btn-modal__icon">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <div class="form-container">
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <div class="form">
           <form
             name="modal-form"
             class="form-modal"
             autocomplete="on"
             novalidate
           >
-            <label class="form-label">
-              <span class="label-title">Ім'я</span>
+            <label>
+              <span class="form__label">Ім'я</span>
             </label>
-            <div class="form-wrap">
+            <div class="form__wrap">
               <input type="text" name="personal-info" class="form-input" />
-              <svg class="modal-icon" width="12" height="12">
+              <svg class="form__icon" width="12" height="12">
                 <use href="./images/sprite.svg#icon-name-form"></use>
               </svg>
             </div>
-            <label class="form-label">
-              <span class="label-title">Телефон</span>
+            <label>
+              <span class="form__label">Телефон</span>
             </label>
-            <div class="form-wrap">
+            <div class="form__wrap">
               <input type="tel" name="tel" class="form-input" />
-              <svg class="modal-icon" width="13" height="13">
+              <svg class="form__icon" width="13" height="13">
                 <use href="./images/sprite.svg#icon-tel-form"></use>
               </svg>
             </div>
-            <label class="form-label">
-              <span class="label-title">Пошта</span>
+            <label>
+              <span class="form__label">Пошта</span>
             </label>
-            <div class="form-wrap">
+            <div class="form__wrap">
               <input type="email" name="email" class="form-input" />
-              <svg class="modal-icon" width="15" height="12">
+              <svg class="form__icon" width="15" height="12">
                 <use href="./images/sprite.svg#icon-mail-form"></use>
               </svg>
             </div>
-            <label class="form-label">
-              <span class="label-title">Коментар</span>
+            <label>
+              <span class="form__label">Коментар</span>
               <textarea
-                class="form-comment"
+                class="form__comment"
                 name="comment"
                 rows="10"
                 placeholder="Введіть текст"
@@ -698,7 +697,7 @@
                 class="checkbox visually-hidden"
                 name="terms-check"
               />
-              <svg class="terms-icons" width="16" height="15">
+              <svg class="terms__icons" width="16" height="15">
                 <use
                   class="icon-checked"
                   href="./images/sprite.svg#icon-checked"
@@ -708,8 +707,8 @@
                   href="./images/sprite.svg#icon-unchecked"
                 ></use>
               </svg>
-              <span class="terms-descr">Погоджуюся з розсилкою та приймаю</span>
-              <a href="" target="_blank" class="terms-link">Умови договору</a>
+              <span class="terms__descr">Погоджуюся з розсилкою та приймаю</span>
+              <a href="" target="_blank" class="terms__link">Умови договору</a>
             </label>
 
             <button type="submit" class="btn form-btn">Відправити</button>
