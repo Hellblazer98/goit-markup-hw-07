@@ -11,6 +11,7 @@
     letter-spacing: 0.06em;
     color:var(--background-color);
     transition: var(--anim-hover);
+    cursor: pointer;
 
     &:hover,
     &:focus {

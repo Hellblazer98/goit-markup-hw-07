@@ -132,6 +132,7 @@ body {
   color: var(--background-color);
   -webkit-transition: var(--anim-hover);
   transition: var(--anim-hover);
+  cursor: pointer;
 }
 .btn:hover, .btn:focus {
   background-color: var(--hover-color);
@@ -589,7 +590,7 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
